@@ -1,0 +1,201 @@
+body {
+  background-color: brown;
+  font-family: "Pacifico", cursive;
+}
+
+#Timer {
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+  background: #4679bd;
+  border-radius: 3rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+/* Main heading */
+.heading {
+  color: #ffffff;
+}
+/* Countdown timer */
+.timer {
+  color: #ffffff;
+  text-align: center;
+  width: 15rem;
+  height: 15rem;
+  border: 5px solid #fff;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  width: 100%;
+}
+.btn {
+  padding: 0;
+}
+/* play and reset icons */
+.fa-play,
+.fa-redo-alt {
+  color: #ffffff;
+  border: 2px solid transparent;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.fa-play:hover,
+.fa-redo-alt:hover {
+  color: #5715c2;
+  border: 2px solid #5715c2;
+  transition: 0.3s ease;
+}
+/* Make the message visible */
+.show_message {
+  display: block;
+  padding: 1rem 0;
+  color: #ffffff;
+  border-radius: 2rem;
+  transition: 0.5s ease;
+}
+
+/*todo list*/
+
+#todolist {
+  display: flex;
+  flex-direction: column;
+
+  color: #fff;
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+  background: burlywood;
+  border-radius: 3rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.task-manager {
+  padding: 1rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 5 auto;
+}
+
+.task-manager h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+#new-task-form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#new-task-input {
+  flex: 1 1 0%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: brown;
+  font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+  color: brown;
+}
+
+#new-task-submit {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#new-task-submit:hover {
+  opacity: 0.8;
+}
+
+#new-task-submit:active {
+  opacity: 0.6;
+}
+
+#tasks {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+.task-list h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.task .content {
+  flex: 1 1 0%;
+}
+
+.task .content .text {
+  color: brown;
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+  color: green;
+}
+
+.task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.task .actions button:hover {
+  opacity: 0.8;
+}
+
+.task .actions button:active {
+  opacity: 0.6;
+}
+
+.task .actions .edit {
+  color: green;
+}
+
+.task .actions .delete {
+  color: crimson;
+}
